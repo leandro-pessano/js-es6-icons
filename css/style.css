@@ -31,7 +31,6 @@ body {
 
 #header-bottom select {
   margin-left: 10px;
-  width: 40px;
   background-color: #29b1dd;
   color: white;
   border: 1px solid white;
@@ -39,18 +38,28 @@ body {
 
 /* MAIN */
 main {
-  height: 100vh;
   display: flex;
+  justify-content: space-between;
   align-content: flex-start;
   flex-wrap: wrap;
+  height: 100vh;
   background-color: rgb(212, 218, 221);
 }
 
-main .box {
+#icons .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 20px 40px;
   height: 100px;
   width: calc(100% / 5 - 80px);
   background-color: white;
   border-radius: 10px;
   filter: drop-shadow(1px 1px 1px black);
+  font-weight: bold;
+}
+
+.box i {
+  font-size: 40px;
 }
